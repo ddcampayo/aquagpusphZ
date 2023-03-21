@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: AQUAgpusph-tools
+Version: 1.4.6
+Summary: free SPH solver developed by the CEHINAV group.
+Home-page: http://canal.etsin.upm.es/aquagpusph
+Author: J.L. Cercos Pita
+Author-email: jl.cercos@upm.es
+License: LICENSE
+
+
+AQUAgpusph
+==========
+
+Free CFD software based on SPH.
+AQUAgpusph is highly extensible, and accelerated with OpenCL.
+
+Please, visit http://canal.etsin.upm.es/aquagpusph

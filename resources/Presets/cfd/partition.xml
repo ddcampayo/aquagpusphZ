@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<!-- partition.xml
+-->
+
+<sphInput>
+    <Variables>
+        <Variable name="partition" type="float*" length="N" />
+    </Variables>
+
+    <Tools>
+        <!-- Compute the energy variations per particle -->
+        <Tool action="insert" after="Rates" type="kernel" name="cfd partition" path="/home/daniel/aquagpusph.gcc/resources/Scripts/basic/Partition.cl"/>
+    </Tools>
+</sphInput>

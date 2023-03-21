@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<VTKFile type="Collection" version="0.1">
+
+  <Collection>
+    <DataSet file="output.00000.vtu" group="" part="0" timestep="0.000007"/>
+    <DataSet file="output.00001.vtu" group="" part="0" timestep="0.062513"/></Collection>
+
+</VTKFile>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--
+   #    ##   #  #   #
+  # #  #  #  #  #  # #                          #
+ ##### #  #  #  # #####  ##  ###  #  #  ## ###  ###
+ #   # #  #  #  # #   # #  # #  # #  # #   #  # #  #
+ #   # #  #  #  # #   # #  # #  # #  #   # #  # #  #
+ #   #  ## #  ##  #   #  ### ###   ### ##  ###  #  #
+                           # #             #
+                         ##  #             #
+
+Another QUAlity GPU-SPH, by CEHINAV.
+    http://canal.etsin.upm.es/
+Authors:
+    Jose Luis Cercos-Pita
+    Leo Miguel Gonzalez
+    Antonio Souto-Iglesias
+-->
+
+<sphInput>
+    <!-- In this file we will just include other XML definition files -->
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic/domain.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/lelasticity.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/lelasticity/xSPH.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/lelasticity/deltaSPH.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/lelasticity/deltaSPH-full.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/lelasticity/BI.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/lelasticity/elasticBounce.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic/timing.report.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic/performance.report.xml" />
+    <Include file="Settings.xml" />
+    <Include file="SPH.xml" />
+    <Include file="Time.xml" />
+    <Include file="Solid.xml" />
+    <Include file="BCs.xml" />
+</sphInput>

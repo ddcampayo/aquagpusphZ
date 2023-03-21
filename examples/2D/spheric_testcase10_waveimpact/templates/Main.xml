@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--
+   #    ##   #  #   #
+  # #  #  #  #  #  # #                          #
+ ##### #  #  #  # #####  ##  ###  #  #  ## ###  ###
+ #   # #  #  #  # #   # #  # #  # #  # #   #  # #  #
+ #   # #  #  #  # #   # #  # #  # #  #   # #  # #  #
+ #   #  ## #  ##  #   #  ### ###   ### ##  ###  #  #
+                           # #             #
+                         ##  #             #
+
+Another QUAlity GPU-SPH, by CEHINAV.
+    http://canal.etsin.upm.es/
+Authors:
+    Jose Luis Cercos-Pita
+    Leo Miguel Gonzalez
+    Antonio Souto-Iglesias
+-->
+
+<sphInput>
+    <!-- In this file we will just include other XML definition files -->
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/basic.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/basic/time_scheme/improved_euler.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/basic/domain.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/cfd.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/cfd/deltaSPH.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/cfd/deltaSPH-full.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/cfd/BI.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/cfd/elasticBounce.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/cfd/variableTimeStep.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/basic/timing.report.xml" />
+    <Include file="/home/daniel/aquagpusph.gcc/resources/Presets/basic/performance.report.xml" />
+    <Include file="Settings.xml" />
+    <Include file="SPH.xml" />
+    <Include file="Time.xml" />
+    <Include file="Fluids.xml" />
+    <Include file="Motion.xml" />
+    <Include file="Sensors.xml" />
+</sphInput>

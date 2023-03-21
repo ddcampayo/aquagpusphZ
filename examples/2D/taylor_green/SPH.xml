@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--
+   #    ##   #  #   #
+  # #  #  #  #  #  # #                          #
+ ##### #  #  #  # #####  ##  ###  #  #  ## ###  ###
+ #   # #  #  #  # #   # #  # #  # #  # #   #  # #  #
+ #   # #  #  #  # #   # #  # #  # #  #   # #  # #  #
+ #   #  ## #  ##  #   #  ### ###   ### ##  ###  #  #
+                           # #             #
+                         ##  #             #
+
+Another QUAlity GPU-SPH, by CEHINAV.
+    http://canal.etsin.upm.es/
+Authors:
+    Jose Luis Cercos-Pita
+    Leo Miguel Gonzalez
+    Antonio Souto-Iglesias
+-->
+
+<sphInput>
+    <Variables>
+        <Variable name="g" type="vec" value="0.0, 0.0" />
+        <Variable name="dr" type="float" value="0.015707963267948967" />
+        <Variable name="hfac" type="float" value="4.0" />
+        <Variable name="h" type="float" value="hfac * dr" />
+        <Variable name="cs" type="float" value="50.0" />
+        <Variable name="p0" type="float" value="3.0" />
+        <Variable name="courant" type="float" value="0.1" />
+        <Variable name="domain_min" type="vec" value="-6.283185307179586, -6.283185307179586" />
+        <Variable name="domain_max" type="vec" value="6.283185307179586, 6.283185307179586" />
+        <!-- Set the initial value of the kinetic energy -->
+        <Variable name="energy_Ekin" type="float" value="9.869604401089237" />
+    </Variables>
+</sphInput>

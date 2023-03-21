@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!--
+   #    ##   #  #   #
+  # #  #  #  #  #  # #                          #
+ ##### #  #  #  # #####  ##  ###  #  #  ## ###  ###
+ #   # #  #  #  # #   # #  # #  # #  # #   #  # #  #
+ #   # #  #  #  # #   # #  # #  # #  #   # #  # #  #
+ #   #  ## #  ##  #   #  ### ###   ### ##  ###  #  #
+                           # #             #
+                         ##  #             #
+
+Another QUAlity GPU-SPH, by CEHINAV.
+    http://canal.etsin.upm.es/
+Authors:
+    Jose Luis Cercos-Pita
+    Leo Miguel Gonzalez
+    Antonio Souto-Iglesias
+-->
+
+<sphInput>
+    <!-- In this file we will just include other XML definition files -->
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic/domain.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/deltaSPH.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/deltaSPH-full.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/BI.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/BINoSlip.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/elasticBounce.xml" />
+    <Definitions>
+        <!-- Morris laplacian formulations works fine without free surfaces -->
+        <Define name="__LAP_FORMULATION__" value="__LAP_MORRIS__" evaluate="false"/>
+        <!-- Elastic bounce is ignoring multiresolution by default -->
+        <Define name="__MIN_BOUND_DIST__" value="0.05f" evaluate="false"/>
+        <Define name="M_ITERS" value="{{M_ITERS}}" evaluate="false"/>
+    </Definitions>
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/inlet.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/outlet.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/pressureForces.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/viscousForces.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic/timing.report.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/basic/performance.report.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/pressureForces.report.xml" />
+    <Include file="/usr/local/share/aquagpusph/resources/Presets/cfd/viscousForces.report.xml" />
+    <Include file="Settings.xml" />
+    <Include file="Time.xml" />
+    <Include file="SPH.xml" />
+    <Include file="Refinement.xml" />
+    <Include file="Fluids.xml" />
+    <Include file="Initialization.xml" />
+</sphInput>
